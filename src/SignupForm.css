@@ -71,23 +71,44 @@
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .form {
-    padding: 1.5rem;
-    margin: 1rem auto;
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+    margin: 1.5rem auto; /* Adjusted margin for better spacing */
   }
 
   .form h2 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Smaller header size for tablets */
   }
 
   .form input,
   .form button {
-    padding: 0.625rem;
-    font-size: 0.875rem;
+    padding: 0.625rem; /* Adjusted padding for inputs and buttons */
+    font-size: 0.9rem; /* Slightly smaller font size */
   }
 
   .form p {
-    font-size: 0.75rem;
+    font-size: 0.8rem; /* Smaller paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 1rem; /* Further reduced padding for mobile */
+    margin: 1rem auto; /* Adjusted margin */
+  }
+
+  .form h2 {
+    font-size: 1.1rem; /* Smaller header for mobile */
+  }
+
+  .form input,
+  .form button {
+    padding: 0.5rem; /* Reduced padding for inputs and buttons */
+    font-size: 0.85rem; /* Smaller font size for mobile */
+  }
+
+  .form p {
+    font-size: 0.7rem; /* Even smaller paragraph size */
   }
 }
